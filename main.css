@@ -45,8 +45,12 @@ header {
 textarea {
     border: 1.2em solid #eac67a;
     border-radius: 1em;
+    max-width: 600px;
+    width: 100%;
+    height: 20vh;
 
 }
+:focus {outline:none;} ::-moz-focus-inner {border:0;}
 
 button {
     border: none;
@@ -56,11 +60,21 @@ button {
     border-radius: 0.4em;
     padding: 0.5em;
     margin-top: 1em;
+    outline: none;
+
 }
 
+button:hover {
+    background: #e65050;
+}
+
+button:active {
+    background: #831818;
+}
 .wrapper {
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 0 10em;
